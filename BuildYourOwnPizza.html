@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Build your Own Pizza</title>
+   <!-- (Sample code to create styles) 
+       <style>
+    body{
+        background-color: #FAFAD2;
+        }
+    </style>-->
+</head>
+<body>
+   <p align = "right"><a href = "C:\Users\laksh\MyApp\MyAppHome.html">Go Back</a></p>
+   <!--Using form tag to create a form and fieldset tags to group fields together-->
+    <form>
+    <fieldset>
+        <center><h1>Customize your Pizza</h1></center>
+        <h3>Please provide below details</h3>
+        <!--Gathering Customer Information-->
+        <legend>Personal information</legend>
+       <p><label>Name:<input type = "text" name = "Custname"></label></p>
+       <p><label>Email: <input type = "email" name = "Custemail"></label></p>
+       <p><label>Date of Birth: <input type = "date" name = "CustDOB"></label></p>
+       <p><label>Contact: <input type = "tel" name = "Custcontact"></label></p>
+        </fieldset>
+        <fieldset>
+            <!--Gathering Pizza Details-->
+        <legend>Pizza Size</legend>
+        <p><label><input type = "radio" name = "size" value = "small">Small </label></p>
+        <p><label><input type = "radio" name = "size" value = "medium">Medium</label></p>
+        <p><label><input type = "radio" name = "size" value = "large">Large</label></p>
+    </fieldset>
+    <fieldset>
+        <legend>Choose your cheese</legend>
+        <p><label><input type = "radio" name = "cheese" value = "regular">Regular (Marinara)</label></p>
+        <p><label><input type = "radio" name = "cheese" value = "white">Pesto</label></p>
+    </fieldset>
+    <fieldset>
+        <legend>Choose your toppings</legend>
+        <p><label><input type = "checkbox" name = "topping" value = "bananaPeppers">Banana Peppers</label></p>
+        <p><label><input type = "checkbox" name = "topping" value = "olives">Olives</label></p>
+        <p><label><input type = "checkbox" name = "topping" value = "onions">Onions</label></p>
+        <p><label><input type = "checkbox" name = "topping" value = "pineapple">Pine apple</label></p>
+        <p><label><input type = "checkbox" name = "topping" value = "spinach">Spinach</label></p>
+        <p><label><input type = "checkbox" name = "topping" value = "tomatoes">Tomatoes</label></p>
+        <p><label><input type = "checkbox" name = "topping" value = "mushrooms">Mushrooms</label></p>
+    </fieldset>
+    <p><label>Delivery Address: <textarea name = "address" value = "address" maxlength="1000"></textarea></label></p>
+    <p><label><center><button>Submit</button></center></label></p>
+
+</form>
+</body>
+</html>

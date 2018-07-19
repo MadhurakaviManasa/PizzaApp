@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>The Pizza Ordering App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {font-family: "Lato", sans-serif;}
+            .tablink{
+                background-color: #555;
+                color: white;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 15px 16px;
+                font-size: 17px;
+                width: 33.33%;
+            }
+            .tablink:hover{
+                background-color: #777;
+            }
+            .tabcontent{
+                color: black;
+                padding: 50px;
+                text-align: center;
+            }
+            #BYOP {background-color: #555}
+            #Choose {background-color:red}
+            #DailySpecial {background-color:red}
+         
+            </style>
+</head>
+<body>
+    <header>
+        <center><h1>Pizza Ordering Application</h1></center>
+        
+    </header>
+    <div id = "BYOP" class = "tabcontent">
+            <p>Isn't it exciting to build your own pizza?</p>
+            <p>Customize your pizza and we make it for you...</p>
+            <a href = "C:\Users\laksh\MyApp\BuildYourOwnPizza.html">Click here to build your own pizza</a>
+        </div>
+        <div id = "Choose" class = "tabcontent">
+            <h3>Choose from Menu</h3>
+        </div>
+        <div id = "DailySpecial" class = "tabcontent">
+            <h3>View our Daily Special</h3>
+        </div>
+        <button class = "tablink" onclick="OpenContent('BYOP',this)" id= "defaultOpen">Build your own Pizza</button>
+        <button class = "tablink" onclick="OpenContent('Choose',this)">Choose from Menu</button>
+        <button class = "tablink" onclick = "OpenContent('DailySpecial',this)">Daily Special</button>
+        <script>
+        function OpenContent(tabName,element){
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i=0; i<tabcontent.length; i++){
+                tabcontent[i].style.display = "";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for(i=0; i<tablinks.length; i++){
+                tablinks[i].style.backgroungColor = "";
+            }
+            
+                    }
+            document.getElementById("defaultOpen").click();
+        </script>
+</body>
+</html>
